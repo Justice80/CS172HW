@@ -38,12 +38,12 @@ void Polygon::setY(double yCor) {
 	y = yCor;
 }
 
-double Polygon::getPerimeter() {
+double Polygon::getPerimeter() const {
 	double Perimeter = static_cast<double>(n)* side;
 	return Perimeter;
 }
 
-double Polygon::getArea() {
+double Polygon::getArea() const {
 	double Area = ((static_cast<double>(n)*side*side) / (4 * tan(3.14 / n)));
 	return Area;
 }

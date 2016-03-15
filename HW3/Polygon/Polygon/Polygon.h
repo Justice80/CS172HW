@@ -11,15 +11,15 @@ public:
 	Polygon();
 	Polygon(int, double);
 	Polygon(int, double, double, double);
-	double getPerimeter();
-	double getArea();
+	double getPerimeter() const;
+	double getArea() const;
 	void setN(int);
 	void setSide(double);
 	void setX(double);
 	void setY(double);
-	int getN() { return n; }
-	double getSide() { return side; }
-	double getX() { return x; }
-	double getY() { return y; }
+	int getN() const { return n; }
+	double getSide() const { return side; }
+	double getX() const{ return x; }
+	double getY() const { return y; }
 };
 #endif
