@@ -7,23 +7,38 @@ EX03_01 Find a Palindrome
 #include <stack>
 #include <string>
 
+bool isPalindrome(const std::string& s);
+
 int main()
 {
-	std::stack <char> word;
 	std::string temp;
-	bool isPalindrome = true;
 
 	std::cout << "Enter a string of characters: ";
 
 	std::getline(std::cin, temp);
+	const std::string check = temp;
 
-	for (int i = 0; i < temp.size(); i++){
-		word.push(temp[i]);
+	if (isPalindrome(check))
+		std::cout << "This is a palindrome!!\n";
+	else
+		std::cout << "This is not a palindrome....\n";
+
+	return 0;
+}
+
+bool isPalindrome(const std::string& s) {
+	bool isPalindrome = true;
+	std::stack <char> word;
+	char check[100];
+
+	for (int k = 0; k < s.size(); k++){
+		check[k]=tolower(s[k]);
+		word.push(check[k]);
 	}
 
 	do {
-		for (int j = 0; j < temp.size(); j++){
-			if (word.top() == temp[j]) {
+		for (int j = 0; j < s.size(); j++){
+			if (word.top() == check[j]) {
 				word.pop();
 			}
 			else {
@@ -34,10 +49,5 @@ int main()
 		break;
 	} while (isPalindrome == true);
 
-	if (isPalindrome == true)
-		std::cout << "This is a palindrome!!\n";
-	else
-		std::cout << "This is not a palindrome....\n";
-
-	return 0;
+	return isPalindrome;
 }
