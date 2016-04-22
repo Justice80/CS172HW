@@ -5,43 +5,43 @@
 using namespace std;
 
 template <typename T>
-template Vector::Vector() {
+Vector<T>::Vector() {
 	vectorSize = 0;
 }
 
 template <typename T>
-template bool Vector::empty() {
+bool Vector<T>::empty() {
 	return (vectorSize == 0);
 }
 
 template <typename T>
-template T Vector::at(int index) {
+T Vector<T>::at(int index) {
 	return elements[index];
 }
 
 template <typename T>
-template void Vector::push_back(T value) {
+void Vector<T>::push_back(T value) {
 	elements[vectorSize++] = value;
 }
 
 template <typename T>
-template T Vector::pop_back() {
+T Vector<T>::pop_back() {
 	return elements[--vectorSize];
 }
 
 template <typename T>
-template unsigned int Vector::size() {
+unsigned int Vector<T>::size() {
 	return vectorSize;
 }
 
 template <typename T>
-template int Vector::clear() {
+int Vector<T>::clear() {
 	return vectorSize;
 }
 
 template <typename T>
-template void Vector::swap(Vector v2) {
-	T temp[100];
+void Vector<T>::swap(Vector v2) {
+	T temp[1000];
 	int tempSize = v2.size();
 	for (int i = 0; i < v2.size; i++){
 		temp[i] = v2.at(i);
