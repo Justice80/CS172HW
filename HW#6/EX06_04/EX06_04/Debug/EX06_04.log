@@ -1,0 +1,21 @@
+﻿Build started 4/22/2016 12:58:46 AM.
+     1>Project "C:\Users\Justice\Desktop\MajorClasses\CS\Spr16\CS 172\Try2\HW#6\EX06_04\EX06_04\EX06_04.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\justice\desktop\majorclasses\cs\spr16\cs 172\try2\hw#6\ex06_04\ex06_04\source.cpp(23): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\justice\desktop\majorclasses\cs\spr16\cs 172\try2\hw#6\ex06_04\ex06_04\source.cpp(34): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+                 c:\users\justice\desktop\majorclasses\cs\spr16\cs 172\try2\hw#6\ex06_04\ex06_04\source.cpp(20) : see reference to function template instantiation 'void shuffle<int>(std::vector<int,std::allocator<_Ty>> &)' being compiled
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\users\justice\desktop\majorclasses\cs\spr16\cs 172\try2\hw#6\ex06_04\ex06_04\source.cpp(35): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Justice\Desktop\MajorClasses\CS\Spr16\CS 172\Try2\HW#6\EX06_04\Debug\EX06_04.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Justice\Desktop\MajorClasses\CS\Spr16\CS 172\Try2\HW#6\EX06_04\Debug\EX06_04.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Justice\Desktop\MajorClasses\CS\Spr16\CS 172\Try2\HW#6\EX06_04\Debug\EX06_04.lib" /MACHINE:X86 Debug\Source.obj
+         EX06_04.vcxproj -> C:\Users\Justice\Desktop\MajorClasses\CS\Spr16\CS 172\Try2\HW#6\EX06_04\Debug\EX06_04.exe
+     1>Done Building Project "C:\Users\Justice\Desktop\MajorClasses\CS\Spr16\CS 172\Try2\HW#6\EX06_04\EX06_04\EX06_04.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.11
